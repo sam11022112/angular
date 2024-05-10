@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="card">
+        <h1>Registerd student</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let datas of user_records;">
+                    <td>
+{{datas.name}}
+{{datas.email}}
+{{datas.mobile}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
